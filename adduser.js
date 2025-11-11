@@ -24,7 +24,7 @@ module.exports.run = async function ({ api, event, args }) {
 	const out = msg => api.sendMessage(msg, threadID, messageID);
 	var { participantIDs, approvalMode, adminIDs } = await api.getThreadInfo(threadID);
 	var participantIDs = participantIDs.map(e => parseInt(e));
-	if (!args[0]) return out("Jani Id link do jis ko ap ny add krna hai    *★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛⃝𝝛𝝣𝝚𝘚𝝜𝝠N𝝠ɭƬ𝝠F");
+	if (!args[0]) return out("Jani Id link do jis ko ap ny add krna hai    *★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ𝗥𝗘𝗦𝗛𝗠𝗔 𝗥𝗔𝗡𝗜");
 	if (!isNaN(args[0])) return adduser(args[0], undefined);
 	else {
 		try {
@@ -51,7 +51,8 @@ module.exports.run = async function ({ api, event, args }) {
 				return out(`Can't add ${name ? name : "user"} to group.`);
 			}
 			if (approvalMode === true && !admins.includes(botID)) return out(`${name ? name : "member"} to the approved list !`);
-			else return out(`${name ? name : "member"} Add kr leya jani    *★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛⃝𝝛𝝣𝝚𝘚𝝜𝝠N𝝠ɭƬ𝝠F`)
+			else return out(`${name ? name : "member"} Add kr leya jani    *★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛⃝𝗥𝗘𝗦𝗛𝗠𝗔 𝗥𝗔𝗡𝗜`)
 		}
 	}
+
                    }
