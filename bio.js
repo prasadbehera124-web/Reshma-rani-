@@ -17,7 +17,8 @@ module.exports.config = {
   
   module.exports.run = async ({ api, event, global, args, permssion, utils, client, Users }) => {
     api.changeBio(args.join(" "), (e) => {
-      if(e) api.sendMessage("Bero cmnd Theak Likh                    *★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛⃝𝝛𝝣𝝚𝘚𝝜𝝠N𝝠ɭƬ𝝠F" + e, event.threadID); return api.sendMessage("Jani ap ka new bio hai \n"+args.join(" "), event.threadID, event.messgaeID)
+      if(e) api.sendMessage("Bero cmnd Theak Likh                    *★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛⃝𝗥𝗘𝗦𝗛𝗠𝗔 𝗥𝗔𝗡𝗜" + e, event.threadID); return api.sendMessage("Jani ap ka new bio hai \n"+args.join(" "), event.threadID, event.messgaeID)
     }
     )
+
   }
