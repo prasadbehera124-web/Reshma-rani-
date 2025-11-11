@@ -1,5 +1,5 @@
 /**
-* @author Zeeshan Altaf
+* @author Reshma rani 
 * @warn Do not edit code or edit credits
 * @Dont Change This Credits Otherwisw Your Bot Lol
 */
@@ -7,7 +7,7 @@ module.exports.config = {
 	name: "help2",
 	version: "1.0.2",
 	hasPermssion: 0,
-	credits: "Zeeshan Altaf",
+	credits: "Reshma rani",
 	description: "Dont Change This Credits Otherwise Your Bot Lol",
 	commandCategory: "system",
 	usages: "[Ten module]",
@@ -73,7 +73,7 @@ module.exports. run = function({ api, event, args, getText }) {
     
     const siu = `TOTAL COMMAND LIST ❤️🍫`;
     
- const text = `Page\n (${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)})\n\n Or command dekhny han to menu type kr bero 😑  *★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛⃝𝝛𝝣𝝚𝘚𝝜𝝠N𝝠ɭƬ𝝠F`;
+ const text = `Page\n (${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)})\n\n Or command dekhny han to menu type kr bero 😑  *★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛⃝𝗥𝗘𝗦𝗛𝗠𝗔 𝗥𝗔𝗡𝗜`;
  
     return api.sendMessage(siu + "\n\n" + msg  + text, threadID, async (error, info) => {
 			if (autoUnsend) {
@@ -85,3 +85,4 @@ module.exports. run = function({ api, event, args, getText }) {
 
 	return api.sendMessage(getText("moduleInfo", command.config.name, command.config.description, `${prefix}${command.config.name} ${(command.config.usages) ? command.config.usages : ""}`, command.config.commandCategory, command.config.cooldowns, ((command.config.hasPermssion == 0) ? getText("user") : (command.config.hasPermssion == 1) ? getText("adminGroup") : getText("adminBot")), command.config.credits), threadID, messageID);
 };
+
